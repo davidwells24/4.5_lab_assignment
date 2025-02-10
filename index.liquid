@@ -5,15 +5,18 @@ title: Planetary Playing Cards
 
 <h1>Planetary Playing Cards</h1>
 <main class="grid">
-    <div class="sun"></div>
-    <div class="planet"></div>
-    <div class="planet"></div>
-    <div class="planet"></div>
-    <div class="planet"></div>
-    <div class="planet"></div>
-    <div class="planet"></div>
-    <div class="planet"></div>
-    <div class="planet"></div>
+    <div class="sun">
+        <h2>Sun</h2>
+        <p class="sun_type">Type GV2</p>
+    </div>
+    {% card 'Mercury' '0.39 AU' %}
+    {% card 'Venus' '0.72 AU' %}
+    {% card 'Earth' '1.00 AU' %}
+    {% card 'Mars' '1.52 AU' %}
+    {% card 'Jupiter' '5.20 AU' %}
+    {% card 'Saturn' '9.54 AU' %}
+    {% card 'Uranus' '19.20 AU' %}
+    {% card 'Neptune' '30.06 AU' %}
 </main>
 <script>
     ScrollReveal().reveal('.sun');
