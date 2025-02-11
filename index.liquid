@@ -5,18 +5,20 @@ title: Planetary Playing Cards
 
 <h1>Planetary Playing Cards</h1>
 <main class="grid">
-    <div class="sun">
+    <div class="sun_card">
+        <div class="sun no_hover">
+        </div>
         <h2>Sun</h2>
         <p class="sun_type">Type GV2</p>
     </div>
-    {% card 'Mercury' '0.39 AU' %}
-    {% card 'Venus' '0.72 AU' %}
-    {% card 'Earth' '1.00 AU' %}
-    {% card 'Mars' '1.52 AU' %}
-    {% card 'Jupiter' '5.20 AU' %}
-    {% card 'Saturn' '9.54 AU' %}
-    {% card 'Uranus' '19.20 AU' %}
-    {% card 'Neptune' '30.06 AU' %}
+    {% card '50px' '50px' '35%' '28%' '#708090' 'Mercury' '0.39 AU' %}
+    {% card '80px' '80px' '26%' '21%' '#F8F6F0' 'Venus' '0.72 AU' %}
+    {% card '85px' '85px' '25%' '20%' '#0022EE' 'Earth' '1.00 AU' %}
+    {% card '60px' '60px' '32%' '26%' '#B0585A' 'Mars' '1.52 AU' %}
+    {% card '150px' '150px' '10%' '0' '#FFAE42' 'Jupiter' '5.20 AU' %}
+    {% card '130px' '130px' '15%' '5%' '#CC9966' 'Saturn' '9.54 AU' %}
+    {% card '105px' '105px' '21%' '13%' '#004E9D' 'Uranus' '19.20 AU' %}
+    {% card '100px' '100px' '22%' '15%' '#072A6C' 'Neptune' '30.06 AU' %}
 </main>
 <script>
     ScrollReveal().reveal('.sun');
